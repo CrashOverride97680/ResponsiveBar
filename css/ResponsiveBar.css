@@ -1,0 +1,53 @@
+/*
+	RESPONSIVE CSS
+*/
+*{
+	padding:0;
+	margin: 0;
+}
+header{
+	background-color:grey;
+}
+
+.wrap{
+	width:980px;
+	max-width:100%;
+	margin: 0 auto;
+}
+.menu {
+	height:38px;
+	position:relative;
+}
+
+.menu ul{
+	list-style:none;
+}
+.menu ul li{
+	float:left;
+}
+.menu ul li a {
+	display:block;
+	padding:10px;
+	color:white;
+	text-decoration:none;
+}
+.menu3Line{
+	text-decoration:none;
+	color:white;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	display:none;
+}
+.menu ul li a:hover {
+	background-color:black;
+}
+
+@media screen and (max-width:768px){
+	.menu3Line{
+		display:block;
+	}
+	.menu ul li a {
+		display:none;
+	}
+}
